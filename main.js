@@ -1,8 +1,5 @@
-Window.onload = function() {
-ver reply = prompt("Bienvenido ¿cual es tu nombre?", "")
-alert ( "Es un gusto tenerte aqui" + reply + "¡")
-}
-let miboton = document.querySelector('button');
-miboton.onclick = function() {
-   alert("Con el codigo: JTOS obtendras un 5% en tu proxima compra");
-}
+window.onload function() (
+var reply prompt("Bienvenid@ ¿cuál es tu nombre?", "") alert("Es un gusto tenerte aqui reply + "1")
+let wileton document.querySelector("button');
+wileton.onclick function() {
+alert("Con el código: 3785 obtendrás un 5% en tu próxima compra");
