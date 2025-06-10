@@ -1,80 +1,77 @@
-<! DOCTYPE. html>
-<html lang='es' >
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset= 'UTF-8'>
-<title> Nosotros</title>
-<link rel='stylesheet' href= 'estilonos.css/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Shop - Tu Comunidad Skater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id= "encabezado" >
-<h1> Nombre del negocio</h1>
-<Ul class="Navbar">
-<li><a href='"index.html">pagina inicio</a>
-<li><a href="contacto.html">contacto</a>
-<li><a href="nosotros.html">nosotros</a>
-<li><a href="galería.html">Galeria</a>
-</ul>
-</div>
-<div id="página">
-<div id="columna_ principal" >
-<h2> Nosotros </h2>
-<p> Narra el inicio de la empresa </p>
-<p> explica la necesidad de crear el sitio </p>
-<video width="320" height="240" controls>
-<source src="movie.mp4" type="video/mp4" >
-<source src="movie.ogg" type="video/ogg">
-</video>
-<h3>Mision</h3>
-<p> Escribe la mision de tu empresa</p>
-<h3>Vision</h3>+
-<p>Escribe la visión de tu empresa </p>
-<div id="columna_publicidad" >
-<h4>Promocion</h4>
-<p>texto</p>
-<img scr="anuncio.ext" width="200" heigth="150"
-<img src="anuncio2.png" width="200" heigth="150" alt="anunció" />
-</div>
-</div>
-<div id ="pie" > Diseñado por Adrian Eduardo Bejines Morales
-</div>
+    <header>
+        <div class="container">
+            <h1>SKATE LIFE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Patinando hacia la libertad</h2>
+                <p>Descubre la esencia del skateboarding. Únete a nuestra comunidad.</p>
+                <a href="#about" class="btn-hero">Saber más</a>
+            </div>
+        </section>
+
+        <section id="about" class="container content-section">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una comunidad apasionada por el **skateboarding**, dedicada a celebrar la cultura, compartir trucos, y conectar a skaters de todo el mundo. Desde principiantes hasta profesionales, aquí encontrarás inspiración, consejos y el apoyo que necesitas para llevar tu patinaje al siguiente nivel.</p>
+            <p>Explora nuestras secciones de videos, descubre los últimos productos en nuestra **tienda** y mantente al tanto de los **eventos** más emocionantes de la escena skater.</p>
+        </section>
+
+        <section class="container latest-content-section">
+            <h2>Lo más reciente</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x250/555555/ffffff?text=Video+Destacado+1" alt="Video de skate 1">
+                    <h3>Trucos para principiantes</h3>
+                    <p>Aprende los trucos básicos para empezar a patinar con confianza.</p>
+                    <a href="videos.html#trucos" class="btn-small">Ver video</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x250/555555/ffffff?text=Producto+Nuevo+2" alt="Producto de skate 2">
+                    <h3>Nueva tabla "Urban Flow"</h3>
+                    <p>Descubre nuestra última tabla, diseñada para el máximo rendimiento.</p>
+                    <a href="tienda.html#urbanflow" class="btn-small">Comprar ahora</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x250/555555/ffffff?text=Evento+Proximo+3" alt="Evento de skate 3">
+                    <h3>Campeonato Urbano 2025</h3>
+                    <p>Prepárate para el evento del año. ¡Grandes premios y mucha acción!</p>
+                    <a href="eventos.html#campeonato" class="btn-small">Más info</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Skate Life. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="https://via.placeholder.com/30/ffffff/000000?text=FB" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="https://via.placeholder.com/30/ffffff/000000?text=IG" alt="Instagram"></a>
+                <a href="#" aria-label="YouTube"><img src="https://via.placeholder.com/30/ffffff/000000?text=YT" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
-*{padding 2px;
-Box sizing: border-box;
-}
-#encabezado {
-Background-color:#04B404 ;
-Text-aling:center;
-Font-size:35px;
-Color:BLUE ;
-Height:auto;
-}
-. Navbar{
-Margin: 0px;
-Padding:0px;
-Text-aling:left;
-Font-size:18px;
-List-style-type:none;
-Height:auto;
-Background-color:# blue;
-}
-#columna_principal (
-Float:left;
-Width:70%;
-Height:700px;
-Background - color:#FFFFF;
-)
-#columna_publicidad (
-Float:left;
-Width:30%;
-Height:700px;
-Background - color:#A9F5D0 ;
-)
-#pie (
-Clear:both;
-Display:flex;
-Background - color:#04B404;
-Height:80px;
-Text-align: center;
-Color:white
-)
