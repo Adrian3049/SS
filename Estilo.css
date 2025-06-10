@@ -11,8 +11,8 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a; 
-            color: #f0f0f0;
+            background-color: #726a68;
+            color: #fffaf9;
             line-height: 1.6;
         }
 
@@ -24,8 +24,8 @@
 
       
         header {
-            background-color: #000;
-            color: #fff;
+            background-color: #715a55;
+            color: #blue;
             padding: 20px 0;
             text-align: center;
             border-bottom: 3px solid #ff5722; 
