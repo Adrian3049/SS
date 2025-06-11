@@ -79,7 +79,7 @@ div > div:nth-of-type(2) {
   }
 }
 
-/* Clear fix */
+
 p[style*="clear"] {
   clear: both;
 }
