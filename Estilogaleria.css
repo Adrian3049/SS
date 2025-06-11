@@ -1,75 +1,79 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e;
-  color: #fff;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+  color: #333;
 }
 
-
-h1 {
+h1, h2, h3 {
   text-align: center;
-  font-size: 3rem;
-  color: #f2f2f2;
+  color: #2c3e50;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
   margin-bottom: 30px;
-  font-family: 'Impact', sans-serif;
-  letter-spacing: 2px;
 }
 
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
+#menu li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-
-.galeria-item {
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #333;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+#menu li a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.galeria-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
+#menu li a:hover {
+  color: #3498db;
 }
 
-.galeria-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-}
-
-.galeria-item:hover img {
-  transform: scale(1.1);
-}
-
-.caption {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
-  width: 100%;
-  text-align: center;
+.ficha {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   padding: 10px;
-  font-size: 1rem;
-  color: #f9f9f9;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
-.galeria-item:hover .caption {
-  opacity: 1;
+.ficha:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.ficha img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+/* Grid container for all .ficha elements */
+div > div:nth-of-type(2) { /* targeting the gallery container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+/* Clear fix */
+p[style*="clear"] {
+  clear: both;
+}
+
+/* Footer styling */
+div:last-of-type {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 40px;
 }
